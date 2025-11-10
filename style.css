@@ -15,7 +15,7 @@ input[type=email], input[type=password]{
     font-size: 14px;
 }
 
-button{
+.login{
     padding: 10px 15px;
     width: 100%;
     color: white;
@@ -27,6 +27,11 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+.login:hover{
     opacity: 0.8;
+}
+
+.container2{
+    background-color: #fdf9f9;
+    padding: 8px;
 }
