@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container" style="display: block;text-align: left;">
+            <form action="action_page.php" method="post">
+                <div class="row mb-4">
+                    <div class="col">
+                        <div  style="display: block;text-align: center;">
+                           <img src="images/login image.jpg" class="profile" alt="profilePhoto">
+                         </div>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div class="row mb-3">
+                        <div class="col-12">                            
+                            <div class="">
+                                <label for="exampleInputEmail1" class="form-label"><b>Username:</b></label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text"><i class="disclosure">We'll never share your email with anyone else.</i></div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label"><b>Password:</b></label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit">Login</button>
+                            </div>                            
+                            
+                            <div class="col-12">
+                               <label>
+                                    <input type="checkbox" checked="checked" name="remember">Remember me
+                                </label> 
+                            </div>                                                                               
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button type="button" class="cancelbtn">
+                                Cancel
+                            </button>                          
+                            <span class="forgot">Forgot <a href="#">Password</a></span>                                                     
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

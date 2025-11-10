@@ -1,0 +1,32 @@
+.profile{
+    width: 25%;
+    border-radius: 50%;
+}
+
+input[type=email], input[type=password]{
+    width: 100%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    margin: 10px 0px;
+    border: 1px solid #ccc;
+}
+
+.disclosure{
+    font-size: 14px;
+}
+
+button{
+    padding: 10px 15px;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    background-color: #008000;
+    margin: 10px 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.8;
+}
