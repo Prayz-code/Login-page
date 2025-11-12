@@ -1,22 +1,26 @@
 const email = document.getElementById('email');
 const emailHelp = document.getElementById('emailHelp');
-const password1 = document.getElementById('password');
-const login = document.getElementById('login')
-
+const password = document.getElementById('password');
+const loginPage = document.getElementById('loginPage');
+const errorMsg = document.getElementById('errorMsg');
+const dashboard = document.getElementById('dashboard');
+const loginForm = document.getElementById('loginForm');
 const validUsername = "makecodelit@gmail.com";
 const validPassword = "ilovecoding123";
 
-const username = "makecodelit@gmail.com";
-const password = "ilovecoding123";
-debugger
-login.addEventListener('submit', () => {
+
+
+loginForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    debugger
       const username = document.getElementById('email').value;
       const password = document.getElementById('password').value;
-      if(username === validUsername && password === validPassword){
-        login.style.display = 'none';
-        dashboard.style.display = 'block';
+      if(password === validPassword && username === validUsername){
+        debugger
+        loginPage.style.display = "none";
+        dashboard.style.setProperty('display', 'block', 'important');
     }else{
-        errormsg.style.display = 'block';
+        errorMsg.style.display = 'block';
     }
      
     });
@@ -24,20 +28,6 @@ login.addEventListener('submit', () => {
 
 
 
-debugger
-// let username = "makecodelit@gmail.com";
-// let password = "ilovecoding123";
 
-// if(username === "makecodelit@gmail.com" && password==="ilovecoding123"){
-//     alert("login successful!");
-    // const login = document.getElementById("login");
 
-    // login.addEventListener("click", () => alert("Login Successful! Welcome!"));
-//     // window.location = ("dashboard.html");
-// }else{
-//     alert("invalid username");
-//     // debugger
-//     // const invaliduser = document.getElementById("login");
-//     // invaliduser.addEventListener("click", () => textContent = "Invalid username or password");
-// };
 
