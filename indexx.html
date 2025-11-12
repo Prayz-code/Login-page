@@ -10,7 +10,7 @@
 <body>
     <main>
         <section class="container mt-5 rounded-5" style="width: 30%;">
-            <div class="loginPage">
+            <div>
                 <div class="row p-4">
                     <div class="col">
                         <form action="" method="post">  
@@ -31,10 +31,11 @@
                                     </div>
                                 </div>
                                 <div class="col mt-3">
-                                    <div class="d-flex justify-content-evenly">                           
+                                    <div class="d-flex justify-content-between">                           
                                         <span><input type="checkbox" checked="checked" name="remember">Remember me</span>
                                         <button type="submit" id="login" class="btn btn-success">Login</button>
                                     </div>
+                                    <p id="errormsg" class="text-center text-danger" style="display: none;">Incorrect Username or Password, please try again.</p>
                                 </div>                                              
                             </div>   
                         </form>
