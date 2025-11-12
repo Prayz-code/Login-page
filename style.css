@@ -1,17 +1,38 @@
 body{
-    background-color: #c9d6ff!important;
+    background-color: #e3e2e2!important;
 }
 
-.container{
-    background-color: white;
-}
-
-.profile{
-    width: 25%;
+.avatar{
+    width: 35%;
     border-radius: 50%;
 }
 
-input[type=email], input[type=password]{
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+input::placeholder{
+    opacity: 0.6;
+    font-size: 12px;
+    font-style: italic;
+    color: black;
+}
+
+.disclosure{
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+/* 
+
+input[type=email], input[type=password  ]{
     width: 100%;
     padding: 10px 15px;
     box-sizing: border-box;
@@ -19,9 +40,7 @@ input[type=email], input[type=password]{
     border: 1px solid #ccc;
 }
 
-.disclosure{
-    font-size: 14px;
-}
+
 
 .login{
     padding: 10px 15px;
@@ -42,4 +61,4 @@ input[type=email], input[type=password]{
 .container2{
     background-color: #fdf9f9;
     padding: 8px;
-}
+} */  
