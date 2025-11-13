@@ -5,11 +5,15 @@ const loginPage = document.getElementById('loginPage');
 const errorMsg = document.getElementById('errorMsg');
 const dashboard = document.getElementById('dashboard');
 const loginForm = document.getElementById('loginForm');
+const toggleBtn = document.getElementById('toggleBtn');
+const sidebar = document.getElementById('sidebar');
+const mainContent = document.getElementById('mainContent');
+const bodyEl = document.querySelector("body");
 const validUsername = "makecodelit@gmail.com";
 const validPassword = "ilovecoding123";
 
 
-
+//loginPage
 loginForm.addEventListener('submit', (e) => {
     e.preventDefault();
     debugger
@@ -25,9 +29,18 @@ loginForm.addEventListener('submit', (e) => {
      
     });
 
+    // toggle button
+    debugger
+let bgColor = true;
+
+function toggle(){
+  bodyEl.style.backgroundcolor = bgColor ? "blue" : "grey";
+  bgColor =! bgColor;
+}
+
+toggleBtn.addEventListener("click", toggle);
 
 
 
 
-
-
+b

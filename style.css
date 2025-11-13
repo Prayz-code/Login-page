@@ -1,6 +1,6 @@
-/* body{
-     background-color: #e3e2e2!important;
-}  */
+ body{
+     background-color: #071739!important;
+}  
 
 .avatar{
     width: 40%;
@@ -8,7 +8,7 @@
 }
 
 .container{
-    background-color: #fff;
+    background-color: #cdd5db;
 }
 
 input::placeholder{
@@ -22,41 +22,34 @@ input::placeholder{
     font-size: 14px;
 }
 
+/* dashboardPage */
 
-
-
-
-
-
-/* 
-
-input[type=email], input[type=password  ]{
-    width: 100%;
-    padding: 10px 15px;
-    box-sizing: border-box;
-    margin: 10px 0px;
-    border: 1px solid #ccc;
-}
-
-
-
-.login{
-    padding: 10px 15px;
-    width: 100%;
-    color: white!important;
-    font-weight: 600;
-    background-color: #008000;
-    margin: 10px 0px;
-    font-size: 16px;
-    border: none;
+ .nav-item{
+    background-color: #a68868;
+    border-radius: 8px;
     cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+} 
+
+.nav-item:hover{
+    transform: translateY(-5px);
+    box-shadow: linear-gradient(135deg, #a68868, #e3c39d);
+    background: #e3c39d;
 }
 
-.login:hover{
-    opacity: 0.8;
+
+#toggleBtn{
+    background: #071739; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
 }
 
-.container2{
-    background-color: #fdf9f9;
-    padding: 8px;
-} */  
+#toggleBtn:hover{
+    background: linear-gradient(135deg, #66b3ff, #3399ff);
+    box-shadow: 0 6px 14px rgba(48, 76, 106, 0.3);
+    transform: translateY(-2px);
+}
+
