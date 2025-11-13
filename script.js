@@ -8,7 +8,7 @@ const loginForm = document.getElementById('loginForm');
 const toggleBtn = document.getElementById('toggleBtn');
 const sidebar = document.getElementById('sidebar');
 const mainContent = document.getElementById('mainContent');
-const bodyEl = document.querySelector("body");
+const bodyEl = document.getElementById("body");
 const validUsername = "makecodelit@gmail.com";
 const validPassword = "ilovecoding123";
 
@@ -30,17 +30,27 @@ loginForm.addEventListener('submit', (e) => {
     });
 
     // toggle button
-    debugger
-let bgColor = true;
+  
+let bgColor = false;
+toggleBtn.addEventListener("click", () => {
+  bgColor = !bgColor;
+  document.body.style.backgroundcolor = bgColor ? '#071739' : '#4b6382';
+  sidebar.classList.toggle('#071739');
+  sidebar.classList.toggle('text-light');
+  mainContent.style.backgroundcolor = bgColor ? '#4b6382' : '#071739';
+  mainContent.style.color = bgColor ? '#fff' : '#000';
+  toggleBtn.textContent = bgColor ? 'Dark Mode' : 'Light Mode';
+});
 
-function toggle(){
-  bodyEl.style.backgroundcolor = bgColor ? "blue" : "grey";
-  bgColor =! bgColor;
-}
-
-toggleBtn.addEventListener("click", toggle);
 
 
-
-
-b
+// let isDarkMode = false; //light mode
+//   toggleBtn.addEventListener('click', () => {
+//     isDarkMode = !isDarkMode;
+//     document.body.style.backgroundColor = isDarkMode ? '#212529' : '#f5f5f5';
+//     sidebar.classList.toggle('bg-dark');
+//       sidebar.classList.toggle('text-white');
+//       mainContent.style.backgroundColor = isDarkMode ? '#343a40' : '#fff';
+//       mainContent.style.color = isDarkMode ? '#fff' : '#000';
+//       toggleBtn.textContent = isDarkMode ? 'Toggle Light Mode' : 'Toggle Dark Mode';
+//     });

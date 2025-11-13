@@ -24,6 +24,10 @@ input::placeholder{
 
 /* dashboardPage */
 
+#sidebar{
+    background-color: #4b6382;
+}
+
  .nav-item{
     background-color: #a68868;
     border-radius: 8px;
