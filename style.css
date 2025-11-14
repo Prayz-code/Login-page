@@ -1,8 +1,8 @@
  body{ 
-     display: flex;
-     justify-content: center;
+     /* display: flex; */
+     /* justify-content: center; */
      align-items: center;
-     height: auto; 
+     /* height: auto;  */
 }  
 
 .avatar{
@@ -15,7 +15,7 @@
     border-radius: 10px;
     padding: 8px;
     margin: 3px;
-    /* max-width: 250px; */
+     /* max-width: 250px;  */
 }
 
 input::placeholder{
